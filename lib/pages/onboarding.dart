@@ -13,19 +13,19 @@ class _OnboardingState extends State<Onboarding> {
     return Stack(
       children: [
         Scaffold(
-          // appBar: AppBar(
-          //   title: const Text('Onboarding'),
-          //   actions: [
-          //     TextButton(
-          //       onPressed: () {},
-          //       // child: const Text('Skip'),
-          //       child: Tooltip(
-          //         message: 'Refresh',
-          //         child: Icon(Icons.refresh),
-          //       ),
-          //     ),
-          //   ],
-          // ),
+          appBar: AppBar(
+            title: const Text('Onboarding'),
+            actions: [
+              TextButton(
+                onPressed: () {},
+                // child: const Text('Skip'),
+                child: Tooltip(
+                  message: 'Refresh',
+                  child: Icon(Icons.refresh),
+                ),
+              ),
+            ],
+          ),
           backgroundColor: Theme.of(context).colorScheme.primary,
           body: _bodyWidget(context),
         ),
